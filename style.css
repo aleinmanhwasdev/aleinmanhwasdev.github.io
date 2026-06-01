@@ -1,6 +1,10 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     }
 
 header {
@@ -21,7 +25,6 @@ h1 a {
 nav ul{
     display: flex;
     gap: 30px;
-
     list-style: none;
     margin: 0;
     padding: 0;
@@ -35,7 +38,7 @@ nav a{
 
 nav a:hover{
     color: purple;
-    }
+}
 
 .destacado {
     display: flex;
@@ -167,7 +170,7 @@ nav a:hover{
     margin: 0;
 }
 
-.footer {
+footer {
     padding: 30px;
     background-color: white;
     border-top: 1px solid #ccc;
@@ -177,6 +180,11 @@ nav a:hover{
     display: flex;
     justify-content: center;
     gap: 80px;
+}
+
+.contenido-de-footer-1 a,
+.contenido-de-footer-2 a {
+    text-decoration: none;
 }
 
 .copyright {
