@@ -180,7 +180,15 @@ footer {
     display: flex;
     justify-content: center;
     gap: 80px;
+    list-style: none;
 }
+
+.contenido-de-footer-1,
+.contenido-de-footer-2 {
+    list-style: none;
+    padding: 0;
+}
+
 
 .contenido-de-footer-1 a,
 .contenido-de-footer-2 a {
