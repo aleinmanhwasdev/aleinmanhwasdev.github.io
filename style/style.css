@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    }
+
+h1 a {
+    text-decoration: none;        
+    color: purple;
+    margin: 0;
+    }
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+nav a{
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    }
+
+nav a:hover{
+    color: purple;
+}
+
+.destacado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.destacado-texto{
+    width: 50%;
+}
+
+.destacado-texto h2{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.destacado-texto p{
+    color: black;
+    font-size: 18px;
+}
+
+.destacado-imagen img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.destacados-del-dia {
+    display: flex;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mas-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.portada-de-manga-destacado img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.titulo-de-manga-destacado h3 {
+    font-size: 18px;
+    color: black;
+}
+
+.tarjeta-de-manga-destacado {
+    width: 300px;
+}
+
+.tendencias {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mangas-en-tendencia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tarjeta-de-manga-tendencia{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 550px;
+}
+
+.portada-de-manga-tendencia img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.titulo-de-manga-tendencia{
+    width: 150px;
+}
+
+.titulo-de-manga-tendencia h3{
+    font-size: 22px;
+}
+
+.ultimas-actualizaciones {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mangas-actualizados {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.columna-1,
+.columna-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tarjeta-de-manga-actualizado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+}
+
+.portada-de-manga-actualizado img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.titulo-de-manga-actualizado h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+footer {
+    padding: 30px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+}
+
+.contenido-de-footer-1,
+.contenido-de-footer-2 {
+    list-style: none;
+    padding: 0;
+}
+
+
+.contenido-de-footer-1 a,
+.contenido-de-footer-2 a {
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.explorar {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.barra-de-filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.filtros ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-del-genero h2 {
+    display: flex;
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.mangas-populares {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.columna-1,
+.columna-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tarjeta-de-manga-popular {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    position: relative;
+}
+
+.numero-popular {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.portada-de-manga-popular img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.titulo-de-manga-popular h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.portada-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.populares {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.titulo-descubrimiento h2 {
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.titulo-descubrimiento h3 {
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.descubrimiento {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 40px;
+}
+
+.columna-de-descubrimiento-1,
+.columna-de-descubrimiento-2,
+.columna-de-descubrimiento-3,
+.columna-de-descubrimiento-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tarjeta-de-descubrimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.portada-de-manga-recomendado img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.titulo-de-recomendado h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+.portada-de-ultimos-agregados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.barra-de-fechas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.mangas-actualizados {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.columna-de-actualizados-1,
+.columna-de-actualizados-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tarjeta-de-manga-actualizado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    position: relative;
+}
+
+.calendario {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.calendario h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+.titulo-de-portada-de-novela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.novelas-ligeras {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tarjeta-de-novela {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.portada-de-novela img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titulo-de-novela h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+.portada-sobre-la-pagnia {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+
+.titulo-de-la-portada-sobre-la-pagina h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.titulo-de-la-portada-sobre-la-pagina h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #555;
+}
+
+.sobre-la-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto-sobre-la-pagina {
+    width: 70%;
+}
+
+.texto-sobre-la-pagina h2 {
+    margin-bottom: 20px;
+}
+
+.texto-sobre-la-pagina p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.razon-de-la-pagina {
+    width: 30%;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+
+.razon-de-la-pagina h2 {
+    margin-bottom: 20px;
+}
+
+.razon-de-la-pagina ul {
+    padding-left: 20px;
+}
+
+.razon-de-la-pagina li {
+    margin-bottom: 10px;
+}
+
+.contacto {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* tarjetas superiores */
+
+.informacion-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.tarjeta-contacto {
+    flex: 1;
+    border: 2px solid #555;
+    padding: 20px;
+}
+
+/* formulario */
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fila-formulario {
+    display: flex;
+    gap: 30px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+input,
+select,
+textarea {
+    padding: 15px;
+    border: 2px solid #555;
+    font-size: 16px;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+}
