@@ -3,7 +3,6 @@ body {
 
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: normal;
     }
 
@@ -14,30 +13,51 @@ header {
     padding: 20px 40px;
     background-color: white;
     border-bottom: 1px solid #ccc;
-    }
+}
 
 h1 a {
-    text-decoration: none;        
+    text-decoration: none;
     color: purple;
-    margin: 0;
-    }
+    font-weight: bold;
+}
 
-nav ul{
+nav ul {
     display: flex;
+    align-items: center;
     gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
-    }
+}
 
-nav a{
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav input[type="text"] {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+nav a,
+nav a:visited {
     text-decoration: none;
     color: #555;
     font-weight: bold;
-    }
+}
 
-nav a:hover{
+nav a:hover {
     color: purple;
+}
+
+nav a:focus {
+    outline: 2px solid purple;
+    outline-offset: 2px;
 }
 
 .destacado {
@@ -78,7 +98,6 @@ nav a:hover{
     justify-content: center;
     gap: 20px;
     padding: 20px 40px;
-    border-bottom: 1px solid #ccc;
 }
 
 .portada-de-manga-destacado img{
@@ -92,6 +111,8 @@ nav a:hover{
 }
 
 .tarjeta-de-manga-destacado {
+    display: flex;
+    flex-direction: column;
     width: 300px;
 }
 
@@ -153,13 +174,6 @@ nav a:hover{
     gap: 40px;
 }
 
-.tarjeta-de-manga-actualizado {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 500px;
-}
-
 .portada-de-manga-actualizado img {
     width: 220px;
     border-radius: 10px;
@@ -170,10 +184,16 @@ nav a:hover{
     margin: 0;
 }
 
-footer {
+.footer {
     padding: 30px;
     background-color: white;
     border-top: 1px solid #ccc;
+}
+
+.footer a {
+    color: #555;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 .footer-contenido {
@@ -183,6 +203,12 @@ footer {
     list-style: none;
 }
 
+.footer h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
 .contenido-de-footer-1,
 .contenido-de-footer-2 {
     list-style: none;
@@ -190,9 +216,10 @@ footer {
 }
 
 
-.contenido-de-footer-1 a,
-.contenido-de-footer-2 a {
+.contenido-de-footer-1 a:hover,
+.contenido-de-footer-2 a:hover {
     text-decoration: none;
+    color: aqua;
 }
 
 .copyright {
@@ -214,6 +241,7 @@ footer {
     padding: 20px 40px;
     background-color: white;
     border-bottom: 1px solid #ccc;
+    gap: 20px;
 }
 
 .filtros ul {
@@ -223,6 +251,32 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.filtros li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtros input[type="text"],
+.filtros select {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+.filtros input[type="text"] {
+    width: 180px;
+}
+
+.filtros label {
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .titulo-del-genero h2 {
@@ -239,13 +293,6 @@ footer {
     gap: 80px;
     padding: 40px;
     border-bottom: 1px solid #ccc;
-}
-
-.columna-1,
-.columna-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
 
 .tarjeta-de-manga-popular {
@@ -268,7 +315,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-weight: bold;
 }
 
@@ -363,14 +409,6 @@ footer {
     align-items: center;
     padding: 20px 40px;
     background-color: white;
-    border-bottom: 1px solid #ccc;
-}
-
-.mangas-actualizados {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 40px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -518,8 +556,6 @@ th {
     margin-bottom: 40px;
 }
 
-/* tarjetas superiores */
-
 .informacion-contacto {
     display: flex;
     justify-content: space-between;
@@ -532,8 +568,6 @@ th {
     border: 2px solid #555;
     padding: 20px;
 }
-
-/* formulario */
 
 .formulario-contacto {
     display: flex;

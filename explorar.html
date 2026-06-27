@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorar</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,8 +17,9 @@
             </h1>
         </div>
         <div>
-            <nav style="text-align: right;">
-            <ul>
+            <nav>
+                <ul>
+                <li><input type="text" placeholder="Buscar manga..."></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="explorar.html">Explorar</a></li>
                 <li><a href="popular.html">Popular</a></li>
@@ -37,31 +41,34 @@
 
 <section class="barra-de-filtros">
     <div class="titulo-de-filtros">
-    <h2>583 Mangas encontrados</h2>
+        <h2>583 Mangas encontrados</h2>
     </div>
+
     <div class="filtros">
-    <ul>
-        <li><input type="text" placeholder="Buscar manga..."></li>
-        <li>
-            <label for="categoria">Categoría:</label>
-            <select id="categoria" name="categoria">
-                <option value="accion">Acción</option>
-                <option value="comedia">Comedia</option>
-                <option value="drama">Drama</option>
-                <option value="fantasia">Fantasía</option>
-                <option value="horror">Horror</option>
-                <option value="romance">Romance</option>
-            </select>
-        </li>
-        <li>
-            <label for="ordenar-por">Ordenar por:</label>
-            <select id="ordenar-por" name="ordenar-por">
-                <option value="nombre">Nombre</option>
-                <option value="popularidad">Popularidad</option>
-                <option value="fecha">Fecha de publicación</option>
-            </select>
-        </li>
-    </ul>
+        <ul>
+            <li>
+                <input type="text" placeholder="Buscar manga...">
+            </li>
+            <li>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="accion">Acción</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasia">Fantasía</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </li>
+            <li>
+                <label for="ordenar-por">Ordenar por:</label>
+                <select id="ordenar-por" name="ordenar-por">
+                    <option value="nombre">Nombre</option>
+                    <option value="popularidad">Popularidad</option>
+                    <option value="fecha">Fecha de publicación</option>
+                </select>
+            </li>
+        </ul>
     </div>
 </section>
 
@@ -70,62 +77,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 1</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de accion 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
     <div class="titulo-del-genero">
@@ -133,62 +140,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 1</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de romance 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
     <div class="titulo-del-genero">
@@ -196,62 +203,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 1</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de comedia 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
     <div class="titulo-del-genero">
@@ -259,62 +266,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 1</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de drama 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
     <div class="titulo-del-genero">
@@ -322,62 +329,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 1</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de fantasia 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
     <div class="titulo-del-genero">
@@ -385,62 +392,62 @@
     </div>
 
 <section class="mas-destacados">
-    <div class="tarjeta-de-manga-destacado">
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 2</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 3</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 4</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 5</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 6</h3>
         </div>
-    </div>
-    <div class="tarjeta-de-manga-destacado">
+    </article>
+    <article class="tarjeta-de-manga-destacado">
         <div class="portada-de-manga-destacado">
             <img src="imagenes/kim.webp" alt="Portada de manga de horror">
         </div>
         <div class="titulo-de-manga-destacado">
             <h3>Titulo del manga de horror 7</h3>
         </div>
-    </div>
+    </article>
 </section>
 
 </main>
@@ -485,7 +492,7 @@
     </div>
 
     <div class="copyright">
-        <p>&copy; 2024 PerMangas. Todos los derechos reservados.</p>
+        <p>&copy; 2026 PerMangas. Todos los derechos reservados.</p>
     </div>
 
 </footer>
