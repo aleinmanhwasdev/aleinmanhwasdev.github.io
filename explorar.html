@@ -8,27 +8,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div>
-            <h1>
-                <a href="index.html">PerMangas</a>
-            </h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                <li><input type="text" placeholder="Buscar manga..."></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="explorar.html">Explorar</a></li>
-                <li><a href="popular.html">Popular</a></li>
-                <li><a href="ultimos.html">Últimos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <div class="logo-de-pagina">
+                <a href="index.html">
+                    <img src="imagenes/PerMangasLogo.jpeg" alt="Logo-de-la-pagina">
+                </a>
+            </div>
+                <a class="navbar-brand" href="#">PerMangas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="explorar.html">Explorar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explorar.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="popular.html">Populares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="popular.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ultimos.html">Ultimos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ultimos.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Inicio de sesion</a>
+                    </li>
+                </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+                </div>
+            </div>
         </nav>
-    </div>
-</header>
+    </header>
 
 <main>
 
@@ -47,26 +85,25 @@
     <div class="filtros">
         <ul>
             <li>
-                <input type="text" placeholder="Buscar manga...">
-            </li>
-            <li>
                 <label for="categoria">Categoría:</label>
-                <select id="categoria" name="categoria">
-                    <option value="accion">Acción</option>
-                    <option value="comedia">Comedia</option>
-                    <option value="drama">Drama</option>
-                    <option value="fantasia">Fantasía</option>
-                    <option value="horror">Horror</option>
-                    <option value="romance">Romance</option>
-                </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="1">Horror</option>
+                        <option value="2">Fantasia</option>
+                        <option value="3">Darama</option>
+                        <option value="3">Comedia</option>
+                        <option value="3">Romance</option>
+                        <option value="3">Accion</option>
+                    </select>
             </li>
             <li>
                 <label for="ordenar-por">Ordenar por:</label>
-                <select id="ordenar-por" name="ordenar-por">
-                    <option value="nombre">Nombre</option>
-                    <option value="popularidad">Popularidad</option>
-                    <option value="fecha">Fecha de publicación</option>
-                </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="1">Recientes</option>
+                        <option value="2">A-Z</option>
+                        <option value="3">Z-A</option>
+                    </select>
             </li>
         </ul>
     </div>
@@ -78,60 +115,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 1</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/maton-al-mando.webp" alt="Portada de manga de accion">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de accion 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/maton-al-mando.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Accion 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -141,60 +185,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 1</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/espadachin.webp" alt="Portada de manga de romance">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de romance 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/segundon.webp" class="card-img-top" alt="Manga de Accion">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Romance 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -204,60 +255,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 1</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/segundon.webp" alt="Portada de manga de comedia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de comedia 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/espadachin.webp" class="card-img-top" alt="Manga de Comedia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Comedia 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -267,60 +325,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 1</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/corin-lotch.webp" alt="Portada de manga de drama">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de drama 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/corin-lotch.webp" class="card-img-top" alt="Manga de Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Drama 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -330,60 +395,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 1</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/dale.webp" alt="Portada de manga de fantasia">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de fantasia 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/dale.webp" class="card-img-top" alt="Manga de Fantasia">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Fantasia 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -393,60 +465,67 @@
 
 <section class="mas-destacados">
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 1</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 2</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 2</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 3</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 3</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 4</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 4</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 5</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 5</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 6</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 6</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
     <article class="tarjeta-de-manga-destacado">
-        <div class="portada-de-manga-destacado">
-            <img src="imagenes/kim.webp" alt="Portada de manga de horror">
-        </div>
-        <div class="titulo-de-manga-destacado">
-            <h3>Titulo del manga de horror 7</h3>
-        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/kim.webp" class="card-img-top" alt="Manga de Horror">
+                        <div class="card-body">
+                            <h5 class="card-title">Manga de Horror 7</h5>
+                                <a href="#" class="btn btn-primary">Leer ahora</a>
+                        </div>
+                </div>
     </article>
 </section>
 
@@ -489,6 +568,28 @@
             </div>
         </div>
 
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body bg-dark text-white rounded">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="imagenes/bbnomoney.jpg" alt="Álbum" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h5 class="mb-0">1800</h5>
+                                            <small class="mb-0">bbno$ & Ironmouse</small>
+                                    </div>
+                            </div>
+                            <audio controls class="w-100">
+                                <source src="musica/bbno$ - 1-800 (ft. ironmouse).mp3" type="audio/mp3">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="copyright">
@@ -498,4 +599,6 @@
 </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
