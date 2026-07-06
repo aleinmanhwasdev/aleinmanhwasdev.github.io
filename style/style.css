@@ -30,26 +30,39 @@ header nav {
     gap: 24px;
     padding: 20px 40px;
     border-bottom: 1px solid #ccc;
-    }
+}
 
 .destacado-texto {
     width: 50%;
-    }
+}
 
 .destacado-texto h2 {
     font-size: 40px;
     color: #000;
-    }
+}
 
 .destacado-texto p {
     color: #000;
     font-size: 18px;
-    }
+}
 
 .destacado-imagen img {
     width: 100%;
     max-width: 280px;
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+    width: 100%;
     }
+
+#carouselExampleCaptions .carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
 
 .destacados-del-dia,
 .tendencias,
@@ -411,10 +424,23 @@ textarea {
     resize: none;
     }
 
+#carouselExampleCaptions .carousel-caption {
+  left: 10%;
+  right: 10%;
+  bottom: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+}
+
+#carouselExampleCaptions .carousel-caption h5 {
+  margin: 0 0 .25rem 0;
+  line-height: 1.2;
+}
+
 @media (max-width: 1200px) {
-  .mangas-actualizados,
-  .mangas-populares,
-  .descubrimiento {
+.mangas-actualizados,
+.mangas-populares,
+.descubrimiento {
     gap: 24px;
     padding: 24px;
     }
@@ -425,7 +451,6 @@ textarea {
         }
 
 @media (max-width: 992px) {
-
 .destacado,
 .sobre-la-pagina,
 .barra-de-filtros,
@@ -521,32 +546,69 @@ textarea {
     font-size: 22px;
     }
 
-.destacado-texto h2 {
+  .destacado-texto h2 {
     font-size: 28px;
     }
 
+
 .calendario {
-    padding: 16px;
-    overflow-x: auto;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
     }
 
 .calendario h2 {
-    font-size: 26px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
     }
 
 .calendario table {
-    min-width: 720px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
     }
 
 .calendario th,
 .calendario td {
-    font-size: 18px;
-    padding: 8px;
+    border: 2px solid #222;
+    padding: 14px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 1.2;
+    }
+
+.calendario th {
+    font-weight: 700;
+    background-color: #f5f5f5;
     }
         }
 
-@media (max-width: 480px) {
+  #carouselExampleCaptions .carousel-caption {
+    left: 10%;
+    right: 10%;
+    bottom: .9rem;
+    padding: .45rem .7rem;
+    }
 
+  #carouselExampleCaptions .carousel-caption h5 {
+    font-size: 1rem;
+    }
+
+  #carouselExampleCaptions .carousel-caption p {
+    font-size: .85rem;
+    }
+
+#carouselExampleCaptions .carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;     /* fuerza centrado de la imagen */
+    object-fit: contain;
+    }
+
+@media (max-width: 480px) {
 .calendario h2 {
     font-size: 22px;
     }
@@ -561,7 +623,7 @@ textarea {
         }
 
 .card {
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
     }
 
 .card:hover {
@@ -611,7 +673,6 @@ textarea {
     height: 2px;
     background-color: currentColor;
     transition: width 0.28s ease;
-    pointer-events: none;
     }
 
 .navbar .nav-link:hover::after,
@@ -634,7 +695,7 @@ textarea:focus {
     }
 
 .logo-de-pagina img {
-  transition: transform 0.25s ease;
+    transition: transform 0.25s ease;
     }
 
 .logo-de-pagina img:hover {
@@ -642,11 +703,11 @@ textarea:focus {
     }
 
 @keyframes fadeUp {
-  from {
+    from {
     opacity: 0;
     transform: translateY(14px);
     }
-  to {
+    to {
     opacity: 1;
     transform: translateY(0);
     }
@@ -677,55 +738,11 @@ main section:nth-of-type(6) { animation-delay: 0.22s; }
     background-color: #e9efff;
     }
 
-@media (hover: hover) and (pointer: fine) {
-  .navbar .nav-link:hover::after,
-  .footer a:hover::after {
-    width: 100%;
-    }
-
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
-    }
-
-  .card:hover .card-img-top {
-    transform: scale(1.04);
-    }
-
-  .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
-    filter: brightness(1.03);
-    }
-        }
-
-@media (hover: none), (pointer: coarse) {
-  .navbar .nav-link::after,
-  .footer a::after {
-    width: 0 !important;
-    transition: none;
-    }
-
-  .card,
-  .card .card-img-top,
-  .btn {
-    transition: none;
-    }
-
-  .card:hover,
-  .card:hover .card-img-top,
-  .btn:hover {
-    transform: none;
-    box-shadow: none;
-    filter: none;
-    }
-        }
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation: none !important;
     transition: none !important;
-    }
-        }
+  }
+}
